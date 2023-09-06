@@ -4,7 +4,7 @@ import { TextField } from "@mui/material";
 import { Stack } from "@mui/material";
 import { Autocomplete } from "@mui/material";
 import { Box } from "@mui/material";
-import { width } from "@mui/system";
+import { width, height } from "@mui/system";
 
 export const SearchBeers = () => {
     const [data, setData] = useState([]);
