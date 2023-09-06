@@ -1,8 +1,20 @@
-# React + Vite
+# "Cheers to Beers"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<center>
 
-Currently, two official plugins are available:
+<h1> Work in progess... </h1>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+</center>
+
+## About the project
+
+An application that allows users to access information about 25 different types of beers. The information ranges from general details (ABV, etc.) to more detailed information about manufacturing and ingredients. This application is designed for people who appreciate beer and its various flavors.
+
+## Objectives
+
+Creating a React SPA (Single Page Application) with:
+
+-   [x] React-router
+-   [x] React Hooks (useState, useEffect)
+-   [x] Implementing autocomplete with MUI AutoComplete
+-   ...
