@@ -5,12 +5,15 @@ export const NavBar = () => {
     return (
         <div>
             <nav>
-                <ul>
-                    <li>
+                <ul className="flex flex-row">
+                    <li className="">
                         <Link to="/">Home</Link>
                     </li>
-                    <li>
+                    <li className="ml-5">
                         <Link to="/allbeers">All Beers</Link>
+                    </li>
+                    <li className="ml-5">
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
             </nav>

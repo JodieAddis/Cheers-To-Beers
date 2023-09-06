@@ -4,11 +4,11 @@ import { Welcome } from "../components/Welcome";
 
 export const Home = () => {
     return (
-        <div>
+        <div className="w-full">
             <header>
                 <Header />
             </header>
-            <main>
+            <main className="min-h-screen mt-20">
                 <Welcome />
             </main>
             <footer>

@@ -8,10 +8,10 @@ export const AllBeers = () => {
             <header>
                 <Header />
             </header>
-            <main>
+            <main className="min-h-screen flex justify-center">
                 <Beers />
             </main>
-            <footer>
+            <footer className="flex justify-center">
                 {/* <Footer /> */}
                 <p>Footer</p>
             </footer>
