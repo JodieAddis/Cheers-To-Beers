@@ -13,7 +13,7 @@ export const NavBar = () => {
                         <Link to="/allbeers">All Beers</Link>
                     </li>
                     <li className="ml-5">
-                        <Link to="/contact">Contact</Link>
+                        {/* <Link to="/contact">Contact</Link> */}
                     </li>
                 </ul>
             </nav>

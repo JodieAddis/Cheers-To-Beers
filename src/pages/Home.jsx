@@ -8,7 +8,7 @@ export const Home = () => {
             <header>
                 <Header />
             </header>
-            <main className="min-h-screen mt-20">
+            <main className="min-h-screen flex justify-center mt-20">
                 <Welcome />
             </main>
             <footer>
