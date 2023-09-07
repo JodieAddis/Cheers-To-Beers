@@ -5,7 +5,7 @@ export const NavBar = () => {
     return (
         <div>
             <nav>
-                <ul className="flex flex-row">
+                <ul className="flex flex-row text-white font-julius font-semibold text-lg">
                     <li className="">
                         <Link to="/">Home</Link>
                     </li>

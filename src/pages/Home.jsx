@@ -4,7 +4,7 @@ import { Welcome } from "../components/Welcome";
 
 export const Home = () => {
     return (
-        <div className="w-full">
+        <div className="w-full bg-DarkGreen">
             <header>
                 <Header />
             </header>

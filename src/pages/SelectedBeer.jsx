@@ -4,7 +4,7 @@ import { BeerData } from "../components/BeerData";
 
 export const SelectedBeer = ({ beerName }) => {
     return (
-        <div>
+        <div className="bg-DarkGreen">
             <header>
                 <Header />
             </header>

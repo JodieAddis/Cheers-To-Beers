@@ -9,6 +9,8 @@ import { Icon } from "@mui/material";
 import { SelectedBeer } from "../pages/SelectedBeer";
 import { BeerData } from "./BeerData";
 
+import Beer from "../assets/img/bg_beer.jpg";
+
 export const Beers = () => {
     const [beerId, setBeerId] = useState();
     const { data, isPending, error } = useFetch(
@@ -36,38 +38,50 @@ export const Beers = () => {
                             className="flex justify-center sm: flex-row"
                             key={id}
                         >
-                            <div
-                                className="justify-center my-6 w-64 border-black border-solid border-2 rounded-xl"
-                                onClick={handleClickedBeer}
-                            >
-                                <div className="flex justify-center">
-                                    <img
-                                        key={id}
-                                        src={beer.image_url}
-                                        alt="`Picture of the beer ${beer.name}`"
-                                        className="w-12 mt-6"
-                                    />
-                                </div>
-                                <div className="flex justify-between mt-6 mx-6">
-                                    <p key={id} className="font-bold w-28">
-                                        {beer.name}
-                                    </p>
-                                    <div className="flex flex-row">
-                                        <IconContext.Provider
-                                            value={{
-                                                size: "1.5em",
-                                            }}
-                                        >
-                                            <IoMdBeer />
-                                        </IconContext.Provider>
-                                        <p key={id} className="ml-2">
-                                            {beer.abv}°
-                                        </p>
-                                    </div>
-                                </div>
-                                <p key={id} className="text-center my-5">
-                                    {beer.tagline}
+                            <div className="flex flex-col mb-20 hover:cursor-pointer">
+                                <p
+                                    key={id}
+                                    className="w-72 ml-3 mb-2 text-3xl text-white font-julius"
+                                >
+                                    {beer.name}
                                 </p>
+                                <div
+                                    className="justify-center w-72 border-LightGreen border-solid border-2 rounded-xl bg-white font-julius"
+                                    onClick={handleClickedBeer}
+                                >
+                                    <div className="flex justify-center rounded-xl">
+                                        <img
+                                            key={id}
+                                            // src={beer.image_url}
+                                            src={Beer}
+                                            alt="Picture of the beer"
+                                            className="rounded-t-xl"
+                                        />
+                                    </div>
+                                    <div className="flex justify-end mt-2 mx-6 text-DarkGreen font-bold">
+                                        <div className="flex flex-row mt-4">
+                                            <IconContext.Provider
+                                                value={{
+                                                    size: "1.5em",
+                                                }}
+                                            >
+                                                <IoMdBeer />
+                                            </IconContext.Provider>
+                                            <p
+                                                key={id}
+                                                className="ml-2 text-xl"
+                                            >
+                                                {beer.abv}°
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p
+                                        key={id}
+                                        className="text-center my-5 mx-4 text-lg font-istok"
+                                    >
+                                        {beer.tagline}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     ))}

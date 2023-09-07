@@ -4,7 +4,7 @@ import { Beers } from "../components/Beers";
 
 export const AllBeers = () => {
     return (
-        <div>
+        <div className="bg-DarkGreen">
             <header>
                 <Header />
             </header>

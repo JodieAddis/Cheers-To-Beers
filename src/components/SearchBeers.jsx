@@ -17,7 +17,7 @@ export const SearchBeers = () => {
 
     return (
         <>
-            <Stack sx={{ width: 200, height: 50 }}>
+            <Stack sx={{ width: 200, height: 50, color: "white" }}>
                 <Autocomplete
                     id="beer_id"
                     getOptionLabel={(option) => option.name}
@@ -39,5 +39,4 @@ export const SearchBeers = () => {
             </Stack>
         </>
     );
-    te;
 };
