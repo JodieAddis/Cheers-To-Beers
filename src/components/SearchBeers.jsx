@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { TextField, Stack, Autocomplete } from "@mui/material";
 import { AllBeers } from "../pages/AllBeers";
 import { useFetch } from "../hooks/useFetch";
+import { SelectedBeer } from "../pages/SelectedBeer";
 
 export const SearchBeers = () => {
     const [selectedBeer, setSelectedBeer] = useState(null);
@@ -36,8 +37,7 @@ export const SearchBeers = () => {
                     value={selectedBeer}
                 />
             </Stack>
-            <p>{selectedBeer ? selectedBeer.name : null}</p>
-            {/* <AllBeers BeerName={selectedBeer ? selectedBeer.name : null} /> */}
         </>
     );
+    te;
 };

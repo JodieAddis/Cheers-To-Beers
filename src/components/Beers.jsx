@@ -1,17 +1,29 @@
 import React, { useState } from "react";
 import { SearchBeers } from "./SearchBeers";
 import { useFetch } from "../hooks/useFetch";
+import { Link, useNavigate } from "react-router-dom";
 
 import { IconContext } from "react-icons";
 import { IoMdBeer } from "react-icons/io";
 import { Icon } from "@mui/material";
+import { SelectedBeer } from "../pages/SelectedBeer";
+import { BeerData } from "./BeerData";
 
-export const Beers = ({ BeerName }) => {
-    const [beerSelected, setBeerSelected] = useState(false); //Etatt pour savoir quoi affiché ou alors faire une nouvelle page ?
-
+export const Beers = () => {
+    const [beerId, setBeerId] = useState();
     const { data, isPending, error } = useFetch(
         "https://api.punkapi.com/v2/beers"
     );
+
+    let navigate = useNavigate();
+
+    const handleClickedBeer = (e) => {
+        let path = `/selectedbeer`;
+        navigate(path);
+        const { value } = e.target.dataset;
+        console.log(value);
+    };
+
     return (
         <div>
             <section className="flex justify-center mt-20">
@@ -20,8 +32,14 @@ export const Beers = ({ BeerName }) => {
             <section className="mt-12">
                 {data &&
                     data.map((beer, id) => (
-                        <div className="flex justify-center sm: flex-row">
-                            <div className="justify-center my-6 w-64 border-black border-solid border-2 rounded-lg">
+                        <div
+                            className="flex justify-center sm: flex-row"
+                            key={id}
+                        >
+                            <div
+                                className="justify-center my-6 w-64 border-black border-solid border-2 rounded-xl"
+                                onClick={handleClickedBeer}
+                            >
                                 <div className="flex justify-center">
                                     <img
                                         key={id}
@@ -47,13 +65,14 @@ export const Beers = ({ BeerName }) => {
                                         </p>
                                     </div>
                                 </div>
-                                <p className="text-center my-5">
+                                <p key={id} className="text-center my-5">
                                     {beer.tagline}
                                 </p>
                             </div>
                         </div>
                     ))}
             </section>
+            <BeerData beerId={beerId} />
         </div>
     );
 };
