@@ -41,7 +41,7 @@ export const Beers = () => {
                             <div className="flex flex-col mb-20 hover:cursor-pointer">
                                 <p
                                     key={id}
-                                    className="w-72 ml-3 mb-2 text-3xl text-white font-julius"
+                                    className="w-64 ml-3 mb-2 text-3xl text-white font-julius"
                                 >
                                     {beer.name}
                                 </p>
