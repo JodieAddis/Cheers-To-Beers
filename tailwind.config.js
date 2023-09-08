@@ -6,9 +6,10 @@ export default {
     theme: {
         extend: {
             colors: {
-                LightGreen: "#B9B99D",
+                lightBeige: "#E0CFC3",
                 DarkGreen: "#606C5A",
                 grey: "#5E5E5E",
+                lightGrey: "#858480",
             },
             fontFamily: {
                 julius: ["Julius Sans One", ...defaultTheme.fontFamily.sans],

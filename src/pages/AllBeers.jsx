@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Header } from "../components/Header";
 import { Beers } from "../components/Beers";
 import { DarkModeButton } from "../components/DarkModeButton";
+import { DarkModeContext, DarkModeTheme } from "../context/DarkModeContext";
 
 export const AllBeers = () => {
+    const { darkMode } = useContext(DarkModeTheme);
     return (
-        <div className="bg-DarkGreen">
+        <div className={darkMode ? "bg-lightGrey" : "bg-lightBeige"}>
             <header>
                 <Header />
             </header>
