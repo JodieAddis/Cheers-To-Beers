@@ -15,6 +15,6 @@ An application that allows users to access information about 25 different types 
 Creating a React SPA (Single Page Application) with:
 
 -   [x] React-router
--   [x] React Hooks (useState, useEffect)
+-   [x] React Hooks (useState, useEffect, useContext, personnalized hook useFetch)
 -   [x] Implementing autocomplete with MUI AutoComplete
--   ...
+-   [x] Dark Mode with a switch button (MUI)
