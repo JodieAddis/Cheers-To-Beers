@@ -1,15 +1,24 @@
 import React from "react";
-import { Header } from "../components/Header";
 import { BeerData } from "../components/BeerData";
+import { useContext } from "react";
+import { Header } from "../components/Header";
+import { DarkModeButton } from "../components/DarkModeButton";
+import { DarkModeTheme } from "../context/DarkModeContext";
 
 export const SelectedBeer = ({ beerName }) => {
+    const { darkMode } = useContext(DarkModeTheme);
     return (
-        <div className="bg-DarkGreen">
+        <div className={darkMode ? "bg-lightGrey" : "bg-lightBeige"}>
             <header>
                 <Header />
             </header>
-            <main className="min-h-screen flex justify-center">
-                <BeerData />
+            <main className="min-h-screen flex justify-center flex-col mt-6">
+                <div className="flex justify-end">
+                    <DarkModeButton />
+                </div>
+                <div className="flex justify-center">
+                    <BeerData />
+                </div>
             </main>
             <footer className="flex justify-center">
                 {/* <Footer /> */}

@@ -7,7 +7,7 @@ import { DarkModeButton } from "../components/DarkModeButton";
 export const Home = () => {
     const { darkMode } = useContext(DarkModeTheme);
     return (
-        <div className={darkMode ? "bg-lightGrey" : "bg-lightBeige"}>
+        <div className={darkMode ? "bg-grey" : "bg-lightBeige"}>
             <header>
                 <Header />
             </header>

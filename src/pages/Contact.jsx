@@ -8,7 +8,7 @@ import { ContactForm } from "../components/ContactForm";
 export const Contact = () => {
     const { darkMode } = useContext(DarkModeTheme);
     return (
-        <div className={darkMode ? "bg-lightGrey" : "bg-lightBeige"}>
+        <div className={darkMode ? "bg-grey" : "bg-lightBeige"}>
             <header>
                 <Header />
             </header>
