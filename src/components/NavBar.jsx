@@ -34,8 +34,7 @@ export const NavBar = () => {
                                 : "bg-lightBeige text-darkBrown"
                         } px-3 ml-5`}
                     >
-                        {/* <Link to="/contact">Contact</Link> */}
-                        Contact
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
             </nav>
