@@ -7,12 +7,14 @@ import { DarkModeContext, DarkModeTheme } from "../context/DarkModeContext";
 export const AllBeers = () => {
     const { darkMode } = useContext(DarkModeTheme);
     return (
-        <div className={darkMode ? "bg-lightGrey" : "bg-lightBeige"}>
+        <div className={darkMode ? "bg-grey" : "bg-lightBeige"}>
             <header>
                 <Header />
             </header>
             <main className="min-h-screen flex justify-center flex-col">
-                <DarkModeButton />
+                <div className="flex justify-end">
+                    <DarkModeButton />
+                </div>
                 <Beers />
             </main>
             <footer className="flex justify-center">
