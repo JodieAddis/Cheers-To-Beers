@@ -13,10 +13,6 @@ export const SearchBeers = () => {
         "https://api.punkapi.com/v2/beers"
     );
 
-    // const handleBeerSelected = (event, value) => {
-    //     setSelectedBeer(value);
-    // };
-
     const elementClicked = () => {
         handleValueChange();
     };
@@ -24,8 +20,13 @@ export const SearchBeers = () => {
     let navigate = useNavigate();
     const handleValueChange = (event, newValue) => {
         setSelectedBeer(newValue); // Mettre à jour la bière sélectionnée
-        let path = "/selectedbeer";
-        navigate(path);
+        // const dataTest = { id: 1, name: "Jodie", age: "31 ans" };
+        // navigate("/selectedbeer", { state: selectedBeer });
+
+        // Vérifier si selectedBeer est défini avant de naviguer
+        if (newValue) {
+            navigate("/selectedbeer", { state: newValue });
+        }
     };
 
     return (
@@ -51,8 +52,7 @@ export const SearchBeers = () => {
                     onClick={elementClicked}
                 />
             </Stack>
-            <BeerData selectedBeer={selectedBeer} />
-            {/* <p>{selectedBeer ? selectedBeer.name : ""}</p> */}
+            <p>{selectedBeer ? selectedBeer.name : ""}</p>
         </>
     );
 };

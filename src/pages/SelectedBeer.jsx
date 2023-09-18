@@ -5,6 +5,7 @@ import { Header } from "../components/Header";
 import { DarkModeButton } from "../components/DarkModeButton";
 import { DarkModeTheme } from "../context/DarkModeContext";
 
+import { useLocation } from "react-router-dom";
 export const SelectedBeer = ({ beerName }) => {
     const { darkMode } = useContext(DarkModeTheme);
     return (
