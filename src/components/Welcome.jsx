@@ -11,31 +11,31 @@ export const Welcome = () => {
     const { darkMode } = useContext(DarkModeTheme);
 
     return (
-        <div>
-            <div className="">
+        <div className="flex flex-col sm:flex-row">
+            <div className="sm:mr-4">
                 <h1
                     className={`${
                         darkMode ? "text-white" : "text-darkBrown"
-                    } text-center text-4xl font-bold uppercase mb-8`}
+                    } text-center text-4xl sm:text-5xl font-bold uppercase mb-8 sm:my-12`}
                 >
                     welcome
                 </h1>
                 <img
-                    src={darkMode ? dark_beer_1 : beer_1}
+                    src={darkMode ? dark_beer_2 : beer_2}
                     alt="beer from the top"
-                    className="w-72"
+                    className="w-72 sm:w-80"
                 />
             </div>
-            <div>
+            <div className="sm:ml-4">
                 <img
-                    src={darkMode ? dark_beer_2 : beer_2}
+                    src={darkMode ? dark_beer_1 : beer_1}
                     alt="pic of a glass of beer"
-                    className="w-72"
+                    className="w-72 sm:w-80"
                 />
                 <p
                     className={`${
                         darkMode ? "text-white" : "text-darkBrown"
-                    } text-center w-72 font-semibold mt-5`}
+                    } text-center w-72 sm:w-80 font-semibold mt-5 sm:mt-10`}
                 >
                     Dive deeper into the art of brewing with our curated
                     selection of beers. Discover their unique stories and

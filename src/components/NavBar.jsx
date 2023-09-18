@@ -8,7 +8,7 @@ export const NavBar = () => {
     return (
         <div>
             <nav>
-                <ul className="flex flex-row text-white font-julius font-semibold text-lg">
+                <ul className="flex flex-row text-white font-julius font-semibold text-lg sm:text-sm">
                     <li
                         className={`${
                             darkMode

@@ -11,7 +11,7 @@ export const Header = () => {
     const { darkMode } = useContext(DarkModeTheme);
     return (
         <div
-            className="flex justify-between px-5 pt-6 pb-14 bg-cover border-b-2 border-LightGreen"
+            className="flex justify-between px-5 pt-6 pb-14 sm:pb-32 bg-cover border-b-2 border-beigeBrown"
             style={{
                 backgroundImage: darkMode
                     ? `url(${beer_bg_bn})`

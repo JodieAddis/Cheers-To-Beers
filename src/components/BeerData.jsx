@@ -1,29 +1,46 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import { useContext } from "react";
+
+import { DarkModeTheme } from "../context/DarkModeContext";
 
 export const BeerData = () => {
     const location = useLocation();
     const data = location.state;
 
-    console.log(data);
+    const { darkMode } = useContext(DarkModeTheme);
+
+    // console.log(data);
 
     return (
-        <div className="flex flex-col sm:flex-row">
+        <>
             {data && (
-                <>
-                    <section className="mb-6 mt-3 mx-8 text-4xl text-center font-bold uppercase text-darkBrown">
+                <div className="flex flex-col">
+                    <section
+                        className={`${
+                            darkMode ? "text-white" : "text-darkBrown"
+                        } mb-6 mt-3 mx-8 text-4xl text-center font-bold uppercase`}
+                    >
                         <h1>{data.name}</h1>
                     </section>
-                    <section>
+                    <section className="flex flex-col sm:flex-row">
                         <div className="flex justify-center">
                             <img
                                 src={data.image_url}
                                 alt=""
-                                className="w-72 border-darkBrown border-solid border-2"
+                                className={`${
+                                    darkMode
+                                        ? "border-DarkGrey border-solid border-2"
+                                        : "border-darkBrown border-solid border-2"
+                                } w-72`}
                             />
                         </div>
                         <div className="mx-10 mt-10">
-                            <div className="">
+                            <div
+                                className={`${
+                                    darkMode ? "text-white" : "text-darkBrown"
+                                }`}
+                            >
                                 <p className="text-center font-semibold uppercase text-2xl mb-3">
                                     Brewers tips
                                 </p>
@@ -31,8 +48,18 @@ export const BeerData = () => {
                                     {data.brewers_tips}
                                 </p>
                             </div>
-                            <hr className="my-8 border-darkBrown border-solid border-2" />
-                            <div className="mb-10">
+                            <hr
+                                className={`${
+                                    darkMode
+                                        ? "border-DarkGrey border-solid border-2"
+                                        : "border-darkBrown border-solid border-2"
+                                } my-8`}
+                            />
+                            <div
+                                className={`${
+                                    darkMode ? "text-white" : "text-darkBrown"
+                                } mb-10`}
+                            >
                                 <p className="text-center font-semibold uppercase text-2xl mb-3">
                                     Description
                                 </p>
@@ -40,8 +67,18 @@ export const BeerData = () => {
                                     {data.description}
                                 </p>
                             </div>
-                            <hr className="my-8 border-darkBrown border-solid border-2" />
-                            <div className="mb-10">
+                            <hr
+                                className={`${
+                                    darkMode
+                                        ? "border-DarkGrey border-solid border-2"
+                                        : "border-darkBrown border-solid border-2"
+                                } my-8`}
+                            />
+                            <div
+                                className={`${
+                                    darkMode ? "text-white" : "text-darkBrown"
+                                } mb-10`}
+                            >
                                 <p className="text-center font-semibold uppercase text-2xl mb-3">
                                     Food pairing
                                 </p>
@@ -59,8 +96,8 @@ export const BeerData = () => {
                             </div>
                         </div>
                     </section>
-                </>
+                </div>
             )}
-        </div>
+        </>
     );
 };

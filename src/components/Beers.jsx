@@ -36,29 +36,26 @@ export const Beers = () => {
                 <h1
                     className={`${
                         darkMode ? "text-white" : "text-darkBrown"
-                    } text-center text-4xl font-bold`}
+                    } text-center text-4xl font-bold uppercase`}
                 >
                     All Beer
                 </h1>
             </section>
-            <section className="flex justify-center mt-12">
+            <section className="flex justify-center sm:justify-start mt-12 sm:ml-6">
                 <SearchBeers />
             </section>
-            <section className="mt-12">
+            <section className="mt-12 grid grid-cols-1 sm:grid-cols-4  sm:mx-6">
                 {data &&
                     data.map((beer, id) => (
-                        <div
-                            className="flex justify-center sm: flex-row"
-                            key={id}
-                        >
-                            <div className="flex flex-col mb-20 hover:cursor-pointer">
+                        <div className="mx-4 " key={id}>
+                            <div className="flex flex-col mb-20 sm:mb-14 hover:cursor-pointer">
                                 <p
                                     key={id}
                                     className={`${
                                         darkMode
                                             ? "text-white"
                                             : "text-darkBrown"
-                                    } w-64 ml-3 mb-2 text-2xl font-julius font-semibold`}
+                                    } w-64 sm:w-52 ml-3 sm:ml-0 mb-2 text-2xl sm:text-lg font-julius font-semibold truncate`}
                                 >
                                     {beer.name}
                                 </p>
@@ -66,8 +63,8 @@ export const Beers = () => {
                                     className={`${
                                         darkMode
                                             ? "bg-lightGrey border-DarkGrey"
-                                            : "bg-beige border-darkBrown"
-                                    } border-solid border-2 justify-center w-72 font-julius"`}
+                                            : "bg-darkBrown border-darkBrown"
+                                    } border-solid border-2 justify-center w-72 sm:w-52 font-julius"`}
                                     onClick={handleClickedBeer}
                                 >
                                     <div className="flex justify-center rounded-xl">
@@ -86,7 +83,7 @@ export const Beers = () => {
                                                 : "text-darkBrown"
                                         } flex justify-end mt-2 mx-6 font-semibold`}
                                     >
-                                        <div className="flex flex-row">
+                                        {/* <div className="flex flex-row">
                                             <IconContext.Provider
                                                 value={{
                                                     size: "1.5em",
@@ -100,15 +97,15 @@ export const Beers = () => {
                                             >
                                                 {beer.abv}°
                                             </p>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <p
                                         key={id}
                                         className={`${
                                             darkMode
                                                 ? "text-white"
-                                                : "text-darkBrown"
-                                        } text-center mb-4 mt-2 mx-4 text-md font-istok`}
+                                                : "text-lightBeige"
+                                        } text-center mb-4 mt-2 mx-4 sm:mx-2 text-md sm:text-xs font-istok italic`}
                                     >
                                         {beer.tagline}
                                     </p>

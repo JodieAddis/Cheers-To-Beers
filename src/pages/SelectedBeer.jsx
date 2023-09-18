@@ -9,7 +9,7 @@ import { useLocation } from "react-router-dom";
 export const SelectedBeer = ({ beerName }) => {
     const { darkMode } = useContext(DarkModeTheme);
     return (
-        <div className={darkMode ? "bg-lightGrey" : "bg-lightBeige"}>
+        <div className={darkMode ? "bg-grey" : "bg-lightBeige"}>
             <header>
                 <Header />
             </header>
