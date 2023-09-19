@@ -16,13 +16,13 @@ export const Footer = () => {
                 darkMode ? "bg-DarkGrey" : "bg-darkBrown"
             } text-white flex flex-col w-full mt-20`}
         >
-            <section className="flex justify-center sm:flex-row">
+            <section className="flex justify-center flex-col sm:flex-row">
                 <div className="my-6 sm:mx-20">
                     <p className="uppercase text-sm text-center">
                         Social media
                     </p>
                     <ul className="flex flex-row justify-center mt-4">
-                        <li className="mx-2">
+                        <li className="mx-2 hover:cursor-pointer">
                             <IconContext.Provider
                                 value={{
                                     size: "1.5em",
@@ -31,7 +31,7 @@ export const Footer = () => {
                                 <BsLinkedin />
                             </IconContext.Provider>
                         </li>
-                        <li className="mx-2">
+                        <li className="mx-2 hover:cursor-pointer">
                             <IconContext.Provider
                                 value={{
                                     size: "1.5em",
@@ -40,7 +40,7 @@ export const Footer = () => {
                                 <BsGithub />
                             </IconContext.Provider>
                         </li>
-                        <li className="mx-2">
+                        <li className="mx-2 hover:cursor-pointer">
                             <IconContext.Provider
                                 value={{
                                     size: "1.5em",
@@ -49,7 +49,7 @@ export const Footer = () => {
                                 <BsFacebook />
                             </IconContext.Provider>
                         </li>
-                        <li className="mx-2">
+                        <li className="mx-2 hover:cursor-pointer">
                             <IconContext.Provider
                                 value={{
                                     size: "1.5em",

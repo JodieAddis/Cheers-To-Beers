@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeTheme } from "../context/DarkModeContext";
 
 export const NavBar = () => {
     const { darkMode } = useContext(DarkModeTheme);
+
     return (
         <div>
             <nav>
@@ -23,7 +24,7 @@ export const NavBar = () => {
                             darkMode
                                 ? "bg-white text-grey"
                                 : "bg-lightBeige text-darkBrown"
-                        } px-3 ml-5`}
+                        } px-3 sm:ml-5`}
                     >
                         <Link to="/allbeers">All Beers</Link>
                     </li>
@@ -32,7 +33,7 @@ export const NavBar = () => {
                             darkMode
                                 ? "bg-white text-grey"
                                 : "bg-lightBeige text-darkBrown"
-                        } px-3 ml-5`}
+                        } px-3 sm:ml-5`}
                     >
                         <Link to="/contact">Contact</Link>
                     </li>
