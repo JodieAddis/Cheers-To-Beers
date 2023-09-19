@@ -30,13 +30,15 @@ export const SearchBeers = () => {
     };
 
     return (
-        <>
-            <Stack sx={{ width: 200, height: 50, color: "white" }}>
+        <div className="mb-6">
+            <Stack
+                sx={{ width: 150, height: 10, color: "white", fontSize: 12 }}
+            >
                 <Autocomplete
                     id="beer_id"
                     getOptionLabel={(option) => option.name}
                     options={data}
-                    sx={{ width: 200, height: 50 }}
+                    sx={{ width: 150, height: 10, fontSize: 12 }}
                     isOptionEqualToValue={(option, value) =>
                         option.name === value.name
                     }
@@ -45,7 +47,7 @@ export const SearchBeers = () => {
                         <li {...props}>{option.name}</li>
                     )}
                     renderInput={(params) => (
-                        <TextField {...params} label="Search for a Beer" />
+                        <TextField {...params} label="Search" />
                     )}
                     value={selectedBeer}
                     onChange={handleValueChange}
@@ -53,6 +55,6 @@ export const SearchBeers = () => {
                 />
             </Stack>
             <p>{selectedBeer ? selectedBeer.name : ""}</p>
-        </>
+        </div>
     );
 };

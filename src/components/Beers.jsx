@@ -55,16 +55,16 @@ export const Beers = () => {
                                         darkMode
                                             ? "text-white"
                                             : "text-darkBrown"
-                                    } w-64 sm:w-52 ml-3 sm:ml-0 mb-2 text-2xl sm:text-lg font-julius font-semibold truncate`}
+                                    } w-72  sm:w-52 self-center text-left ml-2 sm:ml-0 mb-2 text-2xl sm:text-lg font-julius font-semibold truncate`}
                                 >
                                     {beer.name}
                                 </p>
                                 <div
                                     className={`${
                                         darkMode
-                                            ? "bg-lightGrey border-DarkGrey"
+                                            ? "bg-DarkGrey border-DarkGrey"
                                             : "bg-darkBrown border-darkBrown"
-                                    } border-solid border-2 justify-center w-72 sm:w-52 font-julius"`}
+                                    } border-solid border-2 justify-center self-center w-72 sm:w-52 font-julius"`}
                                     onClick={handleClickedBeer}
                                 >
                                     <div className="flex justify-center rounded-xl">

@@ -3,6 +3,7 @@ import { Header } from "../components/Header";
 import { Welcome } from "../components/Welcome";
 import { DarkModeTheme } from "../context/DarkModeContext";
 import { DarkModeButton } from "../components/DarkModeButton";
+import { Footer } from "../components/Footer";
 
 export const Home = () => {
     const { darkMode } = useContext(DarkModeTheme);
@@ -20,8 +21,7 @@ export const Home = () => {
                 </div>
             </main>
             <footer>
-                {/* <Footer /> */}
-                <p>Footer</p>
+                <Footer />
             </footer>
         </div>
     );

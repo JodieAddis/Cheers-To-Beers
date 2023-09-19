@@ -4,6 +4,7 @@ import { Header } from "../components/Header";
 import { DarkModeButton } from "../components/DarkModeButton";
 import { DarkModeTheme } from "../context/DarkModeContext";
 import { ContactForm } from "../components/ContactForm";
+import { Footer } from "../components/Footer";
 
 export const Contact = () => {
     const { darkMode } = useContext(DarkModeTheme);
@@ -21,8 +22,7 @@ export const Contact = () => {
                 </div>
             </main>
             <footer>
-                {/* <Footer /> */}
-                <p>Footer</p>
+                <Footer />
             </footer>
         </div>
     );

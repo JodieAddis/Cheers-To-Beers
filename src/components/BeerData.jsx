@@ -4,6 +4,9 @@ import { useContext } from "react";
 
 import { DarkModeTheme } from "../context/DarkModeContext";
 
+import { IconContext } from "react-icons";
+import { IoMdBeer } from "react-icons/io";
+
 import beer_picture from "../assets/img/glass_of_beer.jpg";
 
 export const BeerData = () => {
@@ -36,9 +39,22 @@ export const BeerData = () => {
                                             : "border-darkBrown border-solid border-2"
                                     } w-72`}
                                 />
-                                <ul className="flex sm:flex-row justify-between px-2 py-2 bg-darkBrown w-72">
-                                    <li className="text-white text-sm">
-                                        Abv: {data.abv}
+                                <ul
+                                    className={`${
+                                        darkMode
+                                            ? "bg-DarkGrey"
+                                            : "bg-darkBrown"
+                                    } flex sm:flex-row justify-between px-2 py-2 w-72`}
+                                >
+                                    <li className="text-white text-sm flex flex-row">
+                                        <IconContext.Provider
+                                            value={{
+                                                size: "1.5em",
+                                            }}
+                                        >
+                                            <IoMdBeer />
+                                        </IconContext.Provider>{" "}
+                                        {data.abv}°
                                     </li>
                                     <li className="text-white text-sm">
                                         Ibu: {data.ibu}
@@ -74,7 +90,7 @@ export const BeerData = () => {
                                     darkMode ? "text-white" : "text-darkBrown"
                                 } mb-10`}
                             >
-                                <p className="text-center sm:text-left font-semibold uppercase text-2xl sm:text-lg mb-3">
+                                <p className="text-center sm:text-left font-semibold uppercase text-2xl sm:text-lg mb-3 mt-6">
                                     Description
                                 </p>
                                 <p className="text-center sm:text-justify text-lg sm:text-sm">

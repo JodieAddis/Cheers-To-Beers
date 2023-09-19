@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { Header } from "../components/Header";
 import { DarkModeButton } from "../components/DarkModeButton";
 import { DarkModeTheme } from "../context/DarkModeContext";
+import { Footer } from "../components/Footer";
 
 import { useLocation } from "react-router-dom";
 export const SelectedBeer = ({ beerName }) => {
@@ -22,8 +23,7 @@ export const SelectedBeer = ({ beerName }) => {
                 </div>
             </main>
             <footer className="flex justify-center">
-                {/* <Footer /> */}
-                <p>Footer</p>
+                <Footer />
             </footer>
         </div>
     );
