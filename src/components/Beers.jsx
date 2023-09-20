@@ -4,30 +4,15 @@ import { useFetch } from "../hooks/useFetch";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeTheme } from "../context/DarkModeContext";
-
-import { IconContext } from "react-icons";
-import { IoMdBeer } from "react-icons/io";
-import { Icon } from "@mui/material";
-import { SelectedBeer } from "../pages/SelectedBeer";
-import { BeerData } from "./BeerData";
 import { ErrorPage } from "./ErrorPage";
 
-import Beer_display from "../assets/img/glass_of_beer.jpg";
+// import Beer_display from "../assets/img/glass_of_beer.jpg";
 
 export const Beers = () => {
     const [beerId, setBeerId] = useState();
     const { data, isPending, error } = useFetch(
         "https://api.punkapi.com/v2/beers"
     );
-
-    let navigate = useNavigate();
-
-    const handleClickedBeer = (e) => {
-        let path = `/selectedbeer`;
-        navigate(path);
-        const { value } = e.target.dataset;
-        console.log(value);
-    };
 
     const { darkMode } = useContext(DarkModeTheme);
 
@@ -50,7 +35,7 @@ export const Beers = () => {
                 {data &&
                     data.map((beer, id) => (
                         <div className="mx-4 " key={id}>
-                            <div className="flex flex-col mb-20 sm:mb-14 hover:cursor-pointer">
+                            <div className="flex flex-col mb-20 sm:mb-14">
                                 <p
                                     key={id}
                                     className={`${
@@ -67,7 +52,6 @@ export const Beers = () => {
                                             ? "bg-DarkGrey border-DarkGrey"
                                             : "bg-darkBrown border-darkBrown"
                                     } border-solid border-2 justify-center self-center w-72 sm:w-52 font-julius"`}
-                                    onClick={handleClickedBeer}
                                 >
                                     <div className="flex justify-center h-36 bg-whiteCream py-2">
                                         <img
@@ -100,7 +84,6 @@ export const Beers = () => {
                         </div>
                     ))}
             </section>
-            <BeerData beerId={beerId} />
         </div>
     );
 };

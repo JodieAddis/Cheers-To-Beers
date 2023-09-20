@@ -21,7 +21,7 @@ export const Footer = () => {
                     <p className="uppercase text-sm text-center">Address</p>
                     <ul className="flex self-center flex-col text-xs mt-2 text-center sm:text-left">
                         <li className="mt-1">Avenue de la Tamise, 38</li>
-                        <li className="mt-1">1000 Brussels</li>
+                        <li className="mt-1">1000 Brussels, Belgium</li>
                         <li className="mt-1">Belgium</li>
                     </ul>
                 </div>
@@ -70,20 +70,25 @@ export const Footer = () => {
                 </div>
             </section>
             <hr className="border-white border-solid border-1 mx-12 sm:mx-52" />
-            <section className="mb-2">
-                <nav>
-                    <ul className="flex flex-row justify-center mt-4 mb-2 uppercase text-xs">
-                        <li className="mx-4">
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li className="mx-4">
-                            <Link to="/allbeers">All Beers</Link>
-                        </li>
-                        <li className="mx-4">
-                            <Link to="/contact">Contact</Link>
-                        </li>
-                    </ul>
-                </nav>
+            <section className="flex justify-between mb-3 mt-12 mx-12 text-xs">
+                <div>
+                    <nav>
+                        <ul className="flex flex-row uppercase">
+                            <li className="mx-2">
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li className="mx-2">
+                                <Link to="/allbeers">All Beers</Link>
+                            </li>
+                            <li className="mx-2">
+                                <Link to="/contact">Contact</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <p>© Copyright all rights reserved</p>
+                </div>
             </section>
         </div>
     );
