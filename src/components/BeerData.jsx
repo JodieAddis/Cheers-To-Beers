@@ -29,22 +29,26 @@ export const BeerData = () => {
                     <section className="flex flex-col sm:mx-20 sm:mt-4">
                         <div className="flex flex-col justify-center sm:flex-row">
                             <div className="flex-col  self-center mb-8 sm:mb-0">
-                                <img
-                                    // src={data.image_url}
-                                    src={beer_picture}
-                                    alt=""
+                                <div
                                     className={`${
                                         darkMode
                                             ? "border-DarkGrey border-solid border-2"
                                             : "border-darkBrown border-solid border-2"
-                                    } w-72`}
-                                />
+                                    } bg-whiteCream flex justify-center py-2 w-52`}
+                                >
+                                    <img
+                                        src={data.image_url}
+                                        // src={beer_picture}
+                                        alt=""
+                                        className="h-36"
+                                    />
+                                </div>
                                 <ul
                                     className={`${
                                         darkMode
                                             ? "bg-DarkGrey"
                                             : "bg-darkBrown"
-                                    } flex sm:flex-row justify-between px-2 py-2 w-72`}
+                                    } flex sm:flex-row justify-between px-2 py-2 w-52`}
                                 >
                                     <li className="text-white text-sm flex flex-row">
                                         <IconContext.Provider
@@ -84,7 +88,7 @@ export const BeerData = () => {
                                     : "border-darkBrown border-solid border-1"
                             } my-8 mx-10 sm:mx-24 sm:hidden`}
                         />
-                        <div className="mx-10 sm:mx-10 mt-4">
+                        <div className="mx-10 sm:mx-36 mt-4">
                             <div
                                 className={`${
                                     darkMode ? "text-white" : "text-darkBrown"

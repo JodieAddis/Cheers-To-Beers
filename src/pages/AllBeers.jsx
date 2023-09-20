@@ -21,7 +21,6 @@ export const AllBeers = () => {
             </main>
             <footer className="flex justify-center w-auto">
                 <Footer />
-                {/* <p>Footer</p> */}
             </footer>
         </div>
     );

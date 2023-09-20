@@ -17,6 +17,14 @@ export const Footer = () => {
             } text-white flex flex-col w-full mt-20`}
         >
             <section className="flex justify-center flex-col sm:flex-row">
+                <div className="flex justify-center flex-col my-6 sm:mx-20">
+                    <p className="uppercase text-sm text-center">Address</p>
+                    <ul className="flex self-center flex-col text-xs mt-2 text-center sm:text-left">
+                        <li className="mt-1">Avenue de la Tamise, 38</li>
+                        <li className="mt-1">1000 Brussels</li>
+                        <li className="mt-1">Belgium</li>
+                    </ul>
+                </div>
                 <div className="my-6 sm:mx-20">
                     <p className="uppercase text-sm text-center">
                         Social media
@@ -25,7 +33,7 @@ export const Footer = () => {
                         <li className="mx-2 hover:cursor-pointer">
                             <IconContext.Provider
                                 value={{
-                                    size: "1.5em",
+                                    size: "1em",
                                 }}
                             >
                                 <BsLinkedin />
@@ -34,7 +42,7 @@ export const Footer = () => {
                         <li className="mx-2 hover:cursor-pointer">
                             <IconContext.Provider
                                 value={{
-                                    size: "1.5em",
+                                    size: "1em",
                                 }}
                             >
                                 <BsGithub />
@@ -43,7 +51,7 @@ export const Footer = () => {
                         <li className="mx-2 hover:cursor-pointer">
                             <IconContext.Provider
                                 value={{
-                                    size: "1.5em",
+                                    size: "1em",
                                 }}
                             >
                                 <BsFacebook />
@@ -52,7 +60,7 @@ export const Footer = () => {
                         <li className="mx-2 hover:cursor-pointer">
                             <IconContext.Provider
                                 value={{
-                                    size: "1.5em",
+                                    size: "1em",
                                 }}
                             >
                                 <BsInstagram />
@@ -60,19 +68,11 @@ export const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="flex justify-center flex-col my-6 sm:mx-20">
-                    <p className="uppercase text-sm text-center">Address</p>
-                    <ul className="flex self-center flex-col text-xs mt-2 text-center">
-                        <li className="my-1">Avenue de la Tamise, 38</li>
-                        <li className="my-1">1000 Brussels</li>
-                        <li className="my-1">Belgium</li>
-                    </ul>
-                </div>
             </section>
             <hr className="border-white border-solid border-1 mx-12 sm:mx-52" />
-            <section>
+            <section className="mb-2">
                 <nav>
-                    <ul className="flex flex-row justify-center my-6 uppercase text-xs">
+                    <ul className="flex flex-row justify-center mt-4 mb-2 uppercase text-xs">
                         <li className="mx-4">
                             <Link to="/">Home</Link>
                         </li>

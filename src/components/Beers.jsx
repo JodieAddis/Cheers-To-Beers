@@ -10,6 +10,7 @@ import { IoMdBeer } from "react-icons/io";
 import { Icon } from "@mui/material";
 import { SelectedBeer } from "../pages/SelectedBeer";
 import { BeerData } from "./BeerData";
+import { ErrorPage } from "./ErrorPage";
 
 import Beer_display from "../assets/img/glass_of_beer.jpg";
 
@@ -45,6 +46,7 @@ export const Beers = () => {
                 <SearchBeers />
             </section>
             <section className="mt-12 grid grid-cols-1 sm:grid-cols-4  sm:mx-6">
+                {error && <ErrorPage />}
                 {data &&
                     data.map((beer, id) => (
                         <div className="mx-4 " key={id}>
@@ -67,11 +69,11 @@ export const Beers = () => {
                                     } border-solid border-2 justify-center self-center w-72 sm:w-52 font-julius"`}
                                     onClick={handleClickedBeer}
                                 >
-                                    <div className="flex justify-center rounded-xl">
+                                    <div className="flex justify-center h-36 bg-whiteCream py-2">
                                         <img
                                             key={id}
-                                            // src={beer.image_url}
-                                            src={Beer_display}
+                                            src={beer.image_url}
+                                            // src={Beer_display}
                                             alt="Picture of the beer"
                                             className=""
                                         />
@@ -82,23 +84,7 @@ export const Beers = () => {
                                                 ? "text-white"
                                                 : "text-darkBrown"
                                         } flex justify-end mt-2 mx-6 font-semibold`}
-                                    >
-                                        {/* <div className="flex flex-row">
-                                            <IconContext.Provider
-                                                value={{
-                                                    size: "1.5em",
-                                                }}
-                                            >
-                                                <IoMdBeer />
-                                            </IconContext.Provider>
-                                            <p
-                                                key={id}
-                                                className="ml-2 text-lg"
-                                            >
-                                                {beer.abv}°
-                                            </p>
-                                        </div> */}
-                                    </div>
+                                    ></div>
                                     <p
                                         key={id}
                                         className={`${

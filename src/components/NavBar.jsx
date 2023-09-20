@@ -15,7 +15,7 @@ export const NavBar = () => {
                             darkMode
                                 ? "bg-white text-grey"
                                 : "bg-lightBeige text-darkBrown"
-                        } px-3`}
+                        } px-3 py-1`}
                     >
                         <Link to="/">Home</Link>
                     </li>
@@ -24,7 +24,7 @@ export const NavBar = () => {
                             darkMode
                                 ? "bg-white text-grey"
                                 : "bg-lightBeige text-darkBrown"
-                        } px-3 sm:ml-5`}
+                        } px-3 py-1 sm:ml-5`}
                     >
                         <Link to="/allbeers">All Beers</Link>
                     </li>
@@ -33,7 +33,7 @@ export const NavBar = () => {
                             darkMode
                                 ? "bg-white text-grey"
                                 : "bg-lightBeige text-darkBrown"
-                        } px-3 sm:ml-5`}
+                        } px-3 py-1 sm:ml-5`}
                     >
                         <Link to="/contact">Contact</Link>
                     </li>

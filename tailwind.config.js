@@ -10,6 +10,7 @@ export default {
                 beige: "#BFA779",
                 DarkGrey: "#3E3E3E",
                 beigeBrown: "#8F837A",
+                whiteCream: "#FFFDD0",
                 grey: "#5E5E5E",
                 lightGrey: "#858480",
                 darkBrown: "#4A3628",
