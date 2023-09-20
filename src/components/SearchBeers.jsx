@@ -20,9 +20,6 @@ export const SearchBeers = () => {
     let navigate = useNavigate();
     const handleValueChange = (event, newValue) => {
         setSelectedBeer(newValue); // Mettre à jour la bière sélectionnée
-        // const dataTest = { id: 1, name: "Jodie", age: "31 ans" };
-        // navigate("/selectedbeer", { state: selectedBeer });
-
         // Vérifier si selectedBeer est défini avant de naviguer
         if (newValue) {
             navigate("/selectedbeer", { state: newValue });
