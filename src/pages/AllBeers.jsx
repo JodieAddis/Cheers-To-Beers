@@ -14,7 +14,7 @@ export const AllBeers = () => {
                 <Header />
             </header>
             <main className="min-h-screen flex justify-center flex-col">
-                <div className="flex justify-end">
+                <div className="flex justify-end mt-2 mb-auto">
                     <DarkModeButton />
                 </div>
                 <Beers />

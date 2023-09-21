@@ -17,14 +17,14 @@ export const Footer = () => {
             } text-white flex flex-col w-full mt-20`}
         >
             <section className="flex justify-center flex-col sm:flex-row">
-                <div className="flex justify-center flex-col my-6 sm:mx-20">
+                {/* <div className="flex justify-center flex-col my-6 sm:mx-20">
                     <p className="uppercase text-sm text-center">Address</p>
                     <ul className="flex self-center flex-col text-xs mt-2 text-center sm:text-left">
                         <li className="mt-1">Avenue de la Tamise, 38</li>
                         <li className="mt-1">1000 Brussels, Belgium</li>
                         <li className="mt-1">Belgium</li>
                     </ul>
-                </div>
+                </div> */}
                 <div className="my-6 sm:mx-20">
                     <p className="uppercase text-sm text-center">
                         Social media

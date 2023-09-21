@@ -8,6 +8,7 @@ import { IconContext } from "react-icons";
 import { IoMdBeer } from "react-icons/io";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { MdOutlineDescription } from "react-icons/md";
+import { BsPersonLinesFill } from "react-icons/bs";
 
 export const BeerData = () => {
     const location = useLocation();
@@ -135,9 +136,19 @@ export const BeerData = () => {
                                 } my-8 mx-10 sm:mx-72`}
                             />
                             <div className="sm:mx-40">
-                                <h2 className="text-center sm:text-left font-semibold uppercase text-2xl sm:text-lg mb-2">
-                                    Brewers tips
-                                </h2>
+                                <div className="flex flex-row">
+                                    <IconContext.Provider
+                                        value={{
+                                            size: "1.5em",
+                                        }}
+                                    >
+                                        <BsPersonLinesFill />
+                                    </IconContext.Provider>
+
+                                    <h2 className="text-center sm:text-left font-semibold uppercase text-2xl sm:text-lg mb-2 ml-2">
+                                        Brewers tips
+                                    </h2>
+                                </div>
                                 <p className="text-center sm:text-justify text-lg sm:text-sm italic">
                                     {data.brewers_tips}
                                 </p>

@@ -14,7 +14,7 @@ export const Contact = () => {
                 <Header />
             </header>
             <main className="min-h-screen flex justify-center flex-col mt-6">
-                <div className="flex justify-end">
+                <div className="flex justify-end mt-2 mb-auto">
                     <DarkModeButton />
                 </div>
                 <div className="flex justify-center">
