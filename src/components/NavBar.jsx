@@ -14,7 +14,7 @@ export const NavBar = () => {
                         className={`${
                             darkMode
                                 ? "bg-grey text-white"
-                                : "bg-darkBrown text-lightBeige"
+                                : "bg-darkBrown text-white"
                         } bg-opacity-40  px-3 py-1`}
                     >
                         <Link to="/">Home</Link>
@@ -23,7 +23,7 @@ export const NavBar = () => {
                         className={`${
                             darkMode
                                 ? "bg-grey text-white"
-                                : "bg-darkBrown text-lightBeige"
+                                : "bg-darkBrown  text-white"
                         } bg-opacity-40 px-3 py-1 sm:ml-5`}
                     >
                         <Link to="/allbeers">All Beers</Link>
@@ -32,7 +32,7 @@ export const NavBar = () => {
                         className={`${
                             darkMode
                                 ? "bg-grey text-white"
-                                : "bg-darkBrown text-lightBeige"
+                                : "bg-darkBrown  text-white"
                         } bg-opacity-40 px-3 py-1 sm:ml-5`}
                     >
                         <Link to="/contact">Contact</Link>

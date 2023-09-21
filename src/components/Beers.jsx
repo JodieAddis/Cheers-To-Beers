@@ -27,7 +27,7 @@ export const Beers = () => {
                     All Beer
                 </h1>
             </section>
-            <section className="flex justify-center sm:justify-start mt-12 sm:ml-6">
+            <section className="flex justify-center sm:justify-start mt-12 sm:ml-16">
                 <SearchBeers />
             </section>
             <section className="mt-12 grid grid-cols-1 sm:grid-cols-4  sm:mx-6">

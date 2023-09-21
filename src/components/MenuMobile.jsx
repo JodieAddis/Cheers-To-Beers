@@ -37,7 +37,8 @@ export const MenuMobile = () => {
                 <InputLabel
                     id="demo-simple-select-label"
                     sx={{
-                        color: "#4A3628",
+                        // color: "#4A3628",
+                        color: "#E0CFC3",
                         textAlign: "center",
                         fontWeight: "600",
                     }}
@@ -53,8 +54,10 @@ export const MenuMobile = () => {
                     sx={{
                         width: 120,
                         height: 50,
-                        backgroundColor: "#E0CFC3",
-                        color: "#4A3628",
+                        // backgroundColor: "#E0CFC3",
+                        // color: "#4A3628",
+                        backgroundColor: "#4A3628",
+                        color: "#E0CFC3",
                         textAlign: "center",
                         fontWeight: "600",
                     }}

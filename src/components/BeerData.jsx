@@ -80,7 +80,7 @@ export const BeerData = () => {
                                             : "text-darkBrown"
                                     } mb-10`}
                                 >
-                                    <div className=" flex flex-row">
+                                    <div className=" flex flex-row justify-center sm:justify-start">
                                         <IconContext.Provider
                                             value={{
                                                 size: "1.5em",
@@ -106,13 +106,20 @@ export const BeerData = () => {
                                 </div>
                             </div>
                         </div>
+                        <hr
+                            className={`${
+                                darkMode
+                                    ? "border-DarkGrey border-solid border-1"
+                                    : "border-darkBrown border-solid border-1"
+                            } my-3 mx-20 sm:hidden`}
+                        />
                         <div
                             className={`${
                                 darkMode ? "text-white" : "text-darkBrown"
                             } mx-10 sm:mx-4 mt-10`}
                         >
                             <div className="sm:mx-40">
-                                <div className="flex flex-row">
+                                <div className="flex flex-row justify-center sm:justify-start">
                                     <IconContext.Provider
                                         value={{
                                             size: "1.5em",
@@ -136,7 +143,7 @@ export const BeerData = () => {
                                 } my-8 mx-10 sm:mx-72`}
                             />
                             <div className="sm:mx-40">
-                                <div className="flex flex-row">
+                                <div className="flex flex-row justify-center sm:justify-start">
                                     <IconContext.Provider
                                         value={{
                                             size: "1.5em",

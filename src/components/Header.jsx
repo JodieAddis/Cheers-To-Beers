@@ -14,7 +14,7 @@ export const Header = () => {
 
     return (
         <div
-            className="flex flex-col px-4 pt-4 pb-14 sm:pb-28 bg-cover border-b-2 border-beigeBrown"
+            className="flex flex-col px-4 pt-4 pb-8 sm:pb-28 bg-cover border-b-2 border-beigeBrown"
             style={{
                 backgroundImage: darkMode
                     ? `url(${beer_bg_bn})`
@@ -32,17 +32,19 @@ export const Header = () => {
                     <img
                         src={logo_app}
                         alt="Logo of the webiste cheers to beers"
-                        className="w-12"
+                        className=" w-14 sm:w-16"
                     />
                 </div>
             </div>
-            <h1
-                className={`${
-                    darkMode ? "bg-grey" : "bg-darkBrown"
-                } mt-10 text-center text-white text-6xl font-bold font-Aboreto  bg-opacity-40 py-2 mx-72`}
-            >
-                Cheers To Beers
-            </h1>
+            <div className="flex justify-center">
+                <h1
+                    className={`${
+                        darkMode ? "bg-grey" : "bg-darkBrown"
+                    } mt-10 text-center text-white text-4xl sm:text-5xl font-bold font-Aboreto bg-opacity-50 py-2 w-72  sm:w-auto sm:px-6 sm:mx-72`}
+                >
+                    Cheers To Beers
+                </h1>
+            </div>
         </div>
     );
 };

@@ -23,19 +23,19 @@ export const Welcome = () => {
                 <img
                     src={darkMode ? dark_beer_2 : beer_2}
                     alt="beer from the top"
-                    className="w-72 sm:w-80"
+                    className="w-72 sm:w-96"
                 />
             </div>
             <div className="sm:ml-4">
                 <img
                     src={darkMode ? dark_beer_1 : beer_1}
                     alt="pic of a glass of beer"
-                    className="w-72 sm:w-80"
+                    className="w-72 sm:w-96"
                 />
                 <p
                     className={`${
                         darkMode ? "text-white" : "text-darkBrown"
-                    } text-center w-72 sm:w-80 font-semibold mt-5 sm:mt-10`}
+                    } text-center w-72 sm:w-96 font-semibold mt-5 sm:mt-10`}
                 >
                     Dive deeper into the art of brewing with our curated
                     selection of beers. Discover their unique stories and
