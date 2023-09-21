@@ -16,8 +16,9 @@ export default {
                 darkBrown: "#4A3628",
             },
             fontFamily: {
-                julius: ["Julius Sans One", ...defaultTheme.fontFamily.sans],
-                istok: ["Istok Web", ...defaultTheme.fontFamily.sans],
+                Julius: ["Julius", ...defaultTheme.fontFamily.sans],
+                // istok: ["Istok Web", ...defaultTheme.fontFamily.sans],
+                Aboreto: ["Aboreto", ...defaultTheme.fontFamily.sans],
             },
         },
     },

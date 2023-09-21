@@ -13,27 +13,27 @@ export const NavBar = () => {
                     <li
                         className={`${
                             darkMode
-                                ? "bg-white text-grey"
-                                : "bg-lightBeige text-darkBrown"
-                        } px-3 py-1`}
+                                ? "bg-grey text-white"
+                                : "bg-darkBrown text-lightBeige"
+                        } bg-opacity-40  px-3 py-1`}
                     >
                         <Link to="/">Home</Link>
                     </li>
                     <li
                         className={`${
                             darkMode
-                                ? "bg-white text-grey"
-                                : "bg-lightBeige text-darkBrown"
-                        } px-3 py-1 sm:ml-5`}
+                                ? "bg-grey text-white"
+                                : "bg-darkBrown text-lightBeige"
+                        } bg-opacity-40 px-3 py-1 sm:ml-5`}
                     >
                         <Link to="/allbeers">All Beers</Link>
                     </li>
                     <li
                         className={`${
                             darkMode
-                                ? "bg-white text-grey"
-                                : "bg-lightBeige text-darkBrown"
-                        } px-3 py-1 sm:ml-5`}
+                                ? "bg-grey text-white"
+                                : "bg-darkBrown text-lightBeige"
+                        } bg-opacity-40 px-3 py-1 sm:ml-5`}
                     >
                         <Link to="/contact">Contact</Link>
                     </li>

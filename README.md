@@ -2,7 +2,8 @@
 
 <center>
 
-<h1> Work in progess... </h1>
+<img title="a title" alt="Alt text" src="src/assets/img/Home.png" width="500px">
+<img title="a title" alt="Alt text" src="src/assets/img/AllBeers.png" width="500px">
 
 </center>
 
@@ -12,10 +13,14 @@ An application that allows users to access information about 25 different types 
 
 ## Objectives
 
-Creating a React SPA (Single Page Application) with:
+### Creation of a single-page application (SPA) using React and React Router.
 
--   [x] React-router
--   [x] Call API
--   [x] React Hooks : useState, useEffect, useContext, personnalized hook useFetch, useNavigate and useLocation
--   [x] Implementing autocomplete and Select menu with MUI
--   [x] Dark Mode with a switch button (MUI)
+The project was implemented using several hooks, including a custom API call hook. The dark mode was applied using useContext. Material UI was used for creating an Autocomplete, a Select menu, and implementing a switch button for the dark mode.
+
+## Coding Technologies Used
+
+ <img src="https://skillicons.dev/icons?i=vite,html,css,tailwind,react,mui"/>
+
+## Design
+
+<img src="https://skillicons.dev/icons?i=figma"/> The application's design follows the Figma boards, which you can find [HERE](https://www.figma.com/file/5ew9eQDitMm7Z6GtSyPWCR/Cheers-To-Beers?type=design&node-id=0-1&mode=design&t=iwReJuNZLt6QECCG-0)

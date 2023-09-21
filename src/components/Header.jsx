@@ -14,27 +14,35 @@ export const Header = () => {
 
     return (
         <div
-            className="flex justify-between px-4 pt-4 pb-14 sm:pb-32 bg-cover border-b-2 border-beigeBrown"
+            className="flex flex-col px-4 pt-4 pb-14 sm:pb-28 bg-cover border-b-2 border-beigeBrown"
             style={{
                 backgroundImage: darkMode
                     ? `url(${beer_bg_bn})`
                     : `url(${beer_bg})`,
             }}
         >
-            <div className="hidden sm:inline-block">
-                <NavBar />
+            <div className="flex justify-between">
+                <div className="hidden sm:inline-block">
+                    <NavBar />
+                </div>
+                <div className="sm:hidden">
+                    <MenuMobile />
+                </div>
+                <div>
+                    <img
+                        src={logo_app}
+                        alt="Logo of the webiste cheers to beers"
+                        className="w-12"
+                    />
+                </div>
             </div>
-            <div className="sm:hidden">
-                <MenuMobile />
-            </div>
-            <div>
-                {/* <p className="text-white">Logo</p> */}
-                <img
-                    src={logo_app}
-                    alt="Logo of the webiste cheers to beers"
-                    className="w-12"
-                />
-            </div>
+            <h1
+                className={`${
+                    darkMode ? "bg-grey" : "bg-darkBrown"
+                } mt-10 text-center text-white text-6xl font-bold font-Aboreto  bg-opacity-40 py-2 mx-72`}
+            >
+                Cheers To Beers
+            </h1>
         </div>
     );
 };
