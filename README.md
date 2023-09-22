@@ -1,10 +1,16 @@
 # "Cheers to Beers"
 
+## Desktop
+
 <center>
+<img title="a title" alt="Alt text" src="src/assets/img/Home.png" width="400px">
+<img title="a title" alt="Alt text" src="src/assets/img/AllBeers.png" width="400px">
+</center>
 
-<img title="a title" alt="Alt text" src="src/assets/img/Home.png" width="500px">
-<img title="a title" alt="Alt text" src="src/assets/img/AllBeers.png" width="500px">
+## Mobile
 
+<center>
+<img title="a title" alt="Alt text" src="src/assets/img/MobileVersion.png" width="400px">
 </center>
 
 ## About the project
