@@ -17,14 +17,6 @@ export const Footer = () => {
             } text-white flex flex-col w-full mt-20`}
         >
             <section className="flex justify-center flex-col sm:flex-row">
-                {/* <div className="flex justify-center flex-col my-6 sm:mx-20">
-                    <p className="uppercase text-sm text-center">Address</p>
-                    <ul className="flex self-center flex-col text-xs mt-2 text-center sm:text-left">
-                        <li className="mt-1">Avenue de la Tamise, 38</li>
-                        <li className="mt-1">1000 Brussels, Belgium</li>
-                        <li className="mt-1">Belgium</li>
-                    </ul>
-                </div> */}
                 <div className="my-6 sm:mx-20">
                     <p className="uppercase text-sm text-center">
                         Social media
@@ -70,10 +62,10 @@ export const Footer = () => {
                 </div>
             </section>
             <hr className="border-white border-solid border-1 mx-12 sm:mx-52" />
-            <section className="flex justify-between mb-3 mt-12 mx-12 text-xs">
-                <div>
+            <section className="flex flex-col sm:flex-row justify-center sm:justify-between mb-3 mt-10 mx-12 text-xs">
+                <div className="mb-8 sm:mb-0">
                     <nav>
-                        <ul className="flex flex-row uppercase">
+                        <ul className="flex flex-row justify-center uppercase">
                             <li className="mx-2">
                                 <Link to="/">Home</Link>
                             </li>
@@ -86,7 +78,7 @@ export const Footer = () => {
                         </ul>
                     </nav>
                 </div>
-                <div>
+                <div className="text-center sm:text-right">
                     <p>© Copyright all rights reserved</p>
                 </div>
             </section>

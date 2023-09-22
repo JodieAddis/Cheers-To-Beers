@@ -14,7 +14,7 @@ export const Header = () => {
 
     return (
         <div
-            className="flex flex-col px-4 pt-4 pb-8 sm:pb-28 bg-cover border-b-2 border-beigeBrown"
+            className="flex flex-col px-4 pt-4 pb-8 sm:pb-20 bg-cover border-b-2 border-beigeBrown"
             style={{
                 backgroundImage: darkMode
                     ? `url(${beer_bg_bn})`

@@ -35,7 +35,7 @@ export const BeerData = () => {
                                         darkMode
                                             ? "border-DarkGrey border-solid border-2"
                                             : "border-darkBrown border-solid border-2"
-                                    } bg-whiteCream flex justify-center py-2 w-56`}
+                                    } bg-whiteCream flex justify-center py-2 w-56 sm:w-72`}
                                 >
                                     <img
                                         src={data.image_url}
@@ -48,7 +48,7 @@ export const BeerData = () => {
                                         darkMode
                                             ? "bg-DarkGrey"
                                             : "bg-darkBrown"
-                                    } flex sm:flex-row justify-between px-2 py-2 w-56`}
+                                    } flex sm:flex-row justify-between px-2 py-2 w-56 sm:w-72`}
                                 >
                                     <li className="text-white text-sm flex flex-row">
                                         <IconContext.Provider
@@ -71,7 +71,7 @@ export const BeerData = () => {
                             <div
                                 className={`${
                                     darkMode ? "text-white" : "text-darkBrown"
-                                } sm:w-96 mx-12 self-center`}
+                                } sm:w-80 mx-12 sm:mx-6 self-center`}
                             >
                                 <div
                                     className={`${
@@ -80,7 +80,7 @@ export const BeerData = () => {
                                             : "text-darkBrown"
                                     } mb-10`}
                                 >
-                                    <div className=" flex flex-row justify-center sm:justify-start">
+                                    <div className=" flex flex-row justify-center">
                                         <IconContext.Provider
                                             value={{
                                                 size: "1.5em",
@@ -88,21 +88,23 @@ export const BeerData = () => {
                                         >
                                             <IoFastFoodOutline />
                                         </IconContext.Provider>
-                                        <h2 className="text-center sm:text-left font-semibold uppercase text-2xl sm:text-lg mb-3 ml-2">
+                                        <h2 className="text-center font-semibold uppercase text-2xl sm:text-lg mb-3 ml-2">
                                             Food pairing
                                         </h2>
                                     </div>
-                                    <ul className="text-center sm:text-left text-lg sm:text-sm">
-                                        <li className="sm:list-disc">
-                                            {data.food_pairing[0]}
-                                        </li>
-                                        <li className="sm:list-disc">
-                                            {data.food_pairing[1]}
-                                        </li>
-                                        <li className="sm:list-disc">
-                                            {data.food_pairing[2]}
-                                        </li>
-                                    </ul>
+                                    <div className="flex justify-center">
+                                        <ul className="text-center text-lg sm:text-sm">
+                                            <li className="my-1">
+                                                {data.food_pairing[0]}
+                                            </li>
+                                            <li className="my-1">
+                                                {data.food_pairing[1]}
+                                            </li>
+                                            <li className="my-1">
+                                                {data.food_pairing[2]}
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
