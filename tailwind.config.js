@@ -17,7 +17,6 @@ export default {
             },
             fontFamily: {
                 Julius: ["Julius", ...defaultTheme.fontFamily.sans],
-                // istok: ["Istok Web", ...defaultTheme.fontFamily.sans],
                 Aboreto: ["Aboreto", ...defaultTheme.fontFamily.sans],
             },
         },

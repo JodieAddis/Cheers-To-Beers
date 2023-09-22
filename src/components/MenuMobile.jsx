@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { DarkModeTheme } from "../context/DarkModeContext";
@@ -37,8 +36,7 @@ export const MenuMobile = () => {
                 <InputLabel
                     id="demo-simple-select-label"
                     sx={{
-                        // color: "#4A3628",
-                        color: "#E0CFC3",
+                        color: darkMode ? "#FFFFFF" : "#4A3628",
                         textAlign: "center",
                         fontWeight: "600",
                     }}
@@ -54,10 +52,8 @@ export const MenuMobile = () => {
                     sx={{
                         width: 120,
                         height: 50,
-                        // backgroundColor: "#E0CFC3",
-                        // color: "#4A3628",
-                        backgroundColor: "#4A3628",
-                        color: "#E0CFC3",
+                        backgroundColor: darkMode ? "#3E3E3E" : "#E0CFC3",
+                        color: darkMode ? "#FFFFFF" : "#4A3628",
                         textAlign: "center",
                         fontWeight: "600",
                     }}

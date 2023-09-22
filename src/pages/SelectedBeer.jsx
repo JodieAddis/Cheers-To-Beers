@@ -6,8 +6,7 @@ import { DarkModeButton } from "../components/DarkModeButton";
 import { DarkModeTheme } from "../context/DarkModeContext";
 import { Footer } from "../components/Footer";
 
-import { useLocation } from "react-router-dom";
-export const SelectedBeer = ({ beerName }) => {
+export const SelectedBeer = () => {
     const { darkMode } = useContext(DarkModeTheme);
     return (
         <div className={darkMode ? "bg-grey" : "bg-lightBeige"}>

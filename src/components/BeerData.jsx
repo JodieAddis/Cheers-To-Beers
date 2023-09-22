@@ -57,7 +57,7 @@ export const BeerData = () => {
                                             }}
                                         >
                                             <IoMdBeer />
-                                        </IconContext.Provider>{" "}
+                                        </IconContext.Provider>
                                         {data.abv}°
                                     </li>
                                     <li className="text-white text-sm">

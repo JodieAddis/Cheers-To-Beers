@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { TextField, Stack, Autocomplete } from "@mui/material";
-import { AllBeers } from "../pages/AllBeers";
 import { useFetch } from "../hooks/useFetch";
-import { SelectedBeer } from "../pages/SelectedBeer";
-import { BeerData } from "./BeerData";
 import { useNavigate } from "react-router-dom";
+import { DarkModeTheme } from "../context/DarkModeContext";
 
 export const SearchBeers = () => {
     const [selectedBeer, setSelectedBeer] = useState(null);
+    const { darkMode } = useContext(DarkModeTheme);
 
     const { data, isPending, error } = useFetch(
         "https://api.punkapi.com/v2/beers"
@@ -29,7 +28,22 @@ export const SearchBeers = () => {
     return (
         <div className="mb-6">
             <Stack
-                sx={{ width: 150, height: 10, color: "white", fontSize: 12 }}
+                sx={{
+                    width: 150,
+                    height: 20,
+                    textAlign: "center",
+                    fontWeight: "600",
+                    // Changement de couleur de l'encadrer + du texte label
+                    "& .MuiInputLabel-root": {
+                        color: darkMode ? "#ffffff" : "#4A3628",
+                    },
+                    "& .MuiInputBase-root": {
+                        color: darkMode ? "#ffffff" : "#4A3628",
+                    },
+                    "& .MuiSelect-root": {
+                        color: darkMode ? "#ffffff" : "#4A3628",
+                    },
+                }}
             >
                 <Autocomplete
                     id="beer_id"
@@ -51,7 +65,6 @@ export const SearchBeers = () => {
                     onClick={elementClicked}
                 />
             </Stack>
-            <p>{selectedBeer ? selectedBeer.name : ""}</p>
         </div>
     );
 };

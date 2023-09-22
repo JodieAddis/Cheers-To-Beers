@@ -4,7 +4,7 @@ import { Footer } from "../components/Footer";
 
 import { Beers } from "../components/Beers";
 import { DarkModeButton } from "../components/DarkModeButton";
-import { DarkModeContext, DarkModeTheme } from "../context/DarkModeContext";
+import { DarkModeTheme } from "../context/DarkModeContext";
 
 export const AllBeers = () => {
     const { darkMode } = useContext(DarkModeTheme);

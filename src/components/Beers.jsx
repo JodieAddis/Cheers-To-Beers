@@ -1,15 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { SearchBeers } from "./SearchBeers";
 import { useFetch } from "../hooks/useFetch";
-import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeTheme } from "../context/DarkModeContext";
 import { ErrorPage } from "./ErrorPage";
 
-// import Beer_display from "../assets/img/glass_of_beer.jpg";
-
 export const Beers = () => {
-    const [beerId, setBeerId] = useState();
     const { data, isPending, error } = useFetch(
         "https://api.punkapi.com/v2/beers"
     );
@@ -84,7 +80,6 @@ export const Beers = () => {
                                         <img
                                             key={id}
                                             src={beer.image_url}
-                                            // src={Beer_display}
                                             alt="Picture of the beer"
                                             className=""
                                         />

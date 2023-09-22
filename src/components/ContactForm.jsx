@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { useContext } from "react";
 import { DarkModeTheme } from "../context/DarkModeContext";
-import { Link } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 export const ContactForm = () => {
@@ -12,7 +11,6 @@ export const ContactForm = () => {
         e.preventDefault();
         let path = "/sent";
         navigate(path);
-        const { value } = e.target.dataset;
     };
 
     return (
@@ -31,7 +29,6 @@ export const ContactForm = () => {
                     className={`${
                         darkMode ? "text-white" : "text-darkBrown"
                     } font-julius`}
-                    onClick={handleSubmit}
                 >
                     <div>
                         <div className="flex flex-col mb-6 text-md font-semibold">
@@ -78,6 +75,7 @@ export const ContactForm = () => {
                                         ? "bg-white text-DarkGrey"
                                         : "bg-darkBrown text-lightBeige"
                                 } px-3 text-lg font-semibold hover:cursor-pointer`}
+                                onClick={handleSubmit}
                             >
                                 Submit
                             </button>

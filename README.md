@@ -29,4 +29,4 @@ The project was implemented using several hooks, including a custom API call hoo
 
 ## Design
 
-<img src="https://skillicons.dev/icons?i=figma"/> The application's design follows the Figma boards, which you can find [HERE](https://www.figma.com/file/5ew9eQDitMm7Z6GtSyPWCR/Cheers-To-Beers?type=design&node-id=0-1&mode=design&t=iwReJuNZLt6QECCG-0)
+The application's design follows the Figma boards, which you can find [HERE](https://www.figma.com/file/5ew9eQDitMm7Z6GtSyPWCR/Cheers-To-Beers?type=design&node-id=0-1&mode=design&t=iwReJuNZLt6QECCG-0)
