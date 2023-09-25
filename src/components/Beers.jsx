@@ -76,7 +76,7 @@ export const Beers = () => {
                                             : "bg-darkBrown border-darkBrown"
                                     } border-solid border-2 justify-center self-center w-72 sm:w-52 font-julius"`}
                                 >
-                                    <div className="flex justify-center h-36 bg-whiteCream py-2">
+                                    <div className="flex justify-center h-36 bg-white py-2">
                                         <img
                                             key={id}
                                             src={beer.image_url}

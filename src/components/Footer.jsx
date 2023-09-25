@@ -1,5 +1,6 @@
 import React from "react";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import { BsLinkedin, BsGithub, BsFacebook, BsInstagram } from "react-icons/bs";
 import { IconContext } from "react-icons";
@@ -10,6 +11,12 @@ import { DarkModeTheme } from "../context/DarkModeContext";
 
 export const Footer = () => {
     const { darkMode } = useContext(DarkModeTheme);
+
+    //Automatic scroll to the top
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
     return (
         <div
             className={`${

@@ -3,9 +3,9 @@ import { useContext } from "react";
 import { DarkModeTheme } from "../context/DarkModeContext";
 
 import beer_1 from "../assets/img/top_beer.jpg";
-import dark_beer_1 from "../assets/img/top_beer_dark.png";
+import dark_beer_1 from "../assets/img/top_beer_dark.jpg";
 import beer_2 from "../assets/img/glass_of_beer.jpg";
-import dark_beer_2 from "../assets/img/glass_of_beer_dark.png";
+import dark_beer_2 from "../assets/img/glass_of_beer_dark.jpg";
 
 export const Welcome = () => {
     const { darkMode } = useContext(DarkModeTheme);

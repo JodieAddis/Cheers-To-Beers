@@ -5,8 +5,8 @@ import { useContext } from "react";
 import { DarkModeTheme } from "../context/DarkModeContext";
 import { MenuMobile } from "./MenuMobile";
 
-import beer_bg from "../assets/img/Header_desktop.png";
-import beer_bg_bn from "../assets/img/Header_desktop_darkmode.png";
+import beer_bg from "../assets/img/Header.jpg";
+import beer_bg_bn from "../assets/img/Header_darkMode.jpg";
 import logo_app from "../assets/img/logo.png";
 
 export const Header = () => {
